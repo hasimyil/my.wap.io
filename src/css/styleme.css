@@ -1,0 +1,48 @@
+body {
+    background-color: #595647;
+  }
+
+
+h3{ 
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: initial;
+}
+a{ 
+    color:royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+p{
+    font-family: Verdana;
+}
+
+.column {
+    float: left;
+    width: 20%;
+  }
+  
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+p::first-letter{
+    font-size: 1.5em;
+}
+
+p#rotateText{
+    transform: rotateX(180deg);
+}
+
+.w3cImages{
+    display: inline-flex;
+    margin: 20px;
+}
