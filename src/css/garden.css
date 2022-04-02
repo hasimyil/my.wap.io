@@ -1,0 +1,387 @@
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;   
+  box-sizing: border-box;         
+}
+
+
+body {
+  color: #325050;
+  background: #fff;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+
+header {
+  height: 230px;
+  padding: 20px 0 70px 0;
+  background: #2d6260 ; 
+  text-align: center;
+}
+
+
+
+h1 {
+  padding-top: 0;
+  color: #fff;
+  font-size: 3.2em;
+  text-transform: uppercase;
+}
+
+h2 {
+ 
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-top: none;
+  color: rgba(246, 243, 243, 0.6);
+  font-size: 1.6em;
+  font-style: italic;
+}
+h2::before {
+  padding-left: 50px;
+  padding: 50px;
+}
+h3 {
+  margin: 2em 0 0 0;
+  color: #2e484c;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+p {
+  margin: 0.75em 0;
+  line-height: 2;
+}
+
+
+
+.summar {
+  width: 80%;
+  margin: 0 auto;
+}
+.scale h3, .scale p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sum {
+  padding-top: 2em;
+}
+
+
+
+
+.sidebar {
+  background: #edf4f0;
+}
+.sidebar h3 {
+  display: none;
+}
+.sidebar a {
+  color: #607476;
+  text-decoration: none;
+}
+  .sidebar a:hover, .sidebar a:focus {
+    color: #49968e;
+  }
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+
+
+.design-selection li, .res li {
+  float: left;
+  width: 50%;
+  padding: 1.5em 10%;
+  border-top: solid 1px #d9e3dc;
+  color: #c0cac3;
+  font-style: italic;
+}
+
+.design-selection .design-name, .res a, li.view a {
+  display: block;
+  margin-bottom: 0.25em;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.archives {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(255,255,255,0.2);
+}
+.archives h3 {
+  display: none;
+}
+.archives ul {
+  margin: 0;
+}
+.archives li {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style: none;
+}
+.archives li.view {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 71px;
+  line-height: 50px;
+}
+.previous, .next {
+  left: 0;
+  z-index: 3;
+}
+
+.archives a, .archives a:visited {
+  color: rgba(255, 255, 255, 0.65);
+}
+.archives a:hover, .archives a:focus {
+  color: #fff;
+}
+.archives .previous a, .archives .next a {
+  display: block;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  text-indent: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.archives .view a {
+  z-index: 2;
+  width: 100%;
+  min-height: 70px;
+  padding: 12px 0 0 0;
+  text-align: center;
+}
+.archives a::before {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  text-indent: 0;
+  font-size: 44px;
+
+ 
+}
+
+
+
+
+
+
+footer {
+  clear: both;
+  padding: 3em 10%;
+  color: #fff;
+  background: #134347;
+  text-align: center;
+}
+
+
+
+
+
+  body {
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), 
+    color-stop(66%,#ffffff), color-stop(66%,#e5ede8), color-stop(100%,#e5ede8));
+  
+    font-size: 100%;
+  }
+  header {
+    width: 100%;
+    height: 310px;
+    padding: 0 10%;
+    border-top: solid 12px rgba(19, 67, 71, 0.8);
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  header::before, header::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    z-index: 3;
+    top: 9px;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: rgba(0, 39, 43, 0.2);
+  }
+  header::after {
+    top: 306px;
+    height: 4px;
+    background: rgba(0, 39, 43, 0.075);
+  }
+  h1 {
+    display: inline-block;
+    position: relative;
+    margin: 15px 0 0 0;
+    padding: 60px 0 5px 0;
+  }
+  h1::before {
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    content: "";
+ 
+    background-size: 100%;
+    opacity: 0.6;
+
+    -webkit-animation: koan 36000s infinite alternate;
+    -moz-animation: koan 36000s infinite alternate;
+    animation: koan 36000s infinite alternate;
+  }
+  h2 {
+    display: block;
+    margin: 0;
+    padding: 5px 0 60px 70px;
+  }
+  p {
+    font-size: 1em;
+  }
+
+ 
+  nav, .scale {
+    display: inline;
+  }
+  .sum, .part, .scale div, .requirements h3, .requirements p {
+    float: left;
+    clear: left;
+    width: 66%;
+    padding: 1em 5% 1em 10%;
+  }
+  .description h3, .description p,
+  .participation h3, .participation p,
+  .benefits h3, .benefits p {
+    width: 100%;
+  }
+  .sum {
+    padding-top: 3.25em;
+  }
+  .requirements h3, .requirements p {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+
+
+
+  div.description, div.benefits {
+    padding-bottom: 4em;
+  }
+ 
+
+
+
+  .headpage p:last-child, .scale p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  .requirements p:last-child {
+    padding-bottom: 3em;
+    padding-top: 3em;
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+  }
+
+
+  
+  .design-selection, .res {
+    position: absolute;
+    top: 360px;
+    right: 0;
+    width: 33.3%;
+    padding: 0 0 20px 0;
+    margin: 0;
+    overflow: visible;
+    background: transparent;
+  }
+  .sidebar li {
+    float: none;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 29.4% 0 14.7%; /* 0 10% 0 5% of total width */
+  }
+
+
+
+
+ 
+  .archives {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 310px;
+      }
+  .archives nav {
+    display: block;
+    position: absolute;
+    right: 1%;
+    top: 120px;
+    width: 32%;
+  }
+  .archives li {
+    margin: 0;
+  }
+  .archives .view a, .archives a::before {
+    background: rgba(255,255,255,0.1);
+    text-decoration: none;
+  }
+
+  .archives .view a:hover, .archives a:hover::before {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+
+
+  .res {
+    position: absolute;
+    top: 1310px;
+    right: 0;
+    width: 34%;
+    background: transparent;
+  }
+  .res h3 {
+    display: none;
+  }
+  .res ul {
+    width: 55.9%;
+    margin: 0 29.4% 0 14.7%;
+  }
+  .res li {
+    padding: 1.5em 0 1.25em 0;
+    margin: 0;
+  }
+
+
+
